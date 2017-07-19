@@ -43,6 +43,12 @@ func main() {
 			Flags:  commandCreateFlags,
 			Action: commandCreateAction,
 		},
+		{
+			Name:   "zip",
+			Usage:  "create fzpz from fzp part",
+			Flags:  commandZipFlags,
+			Action: commandZipAction,
+		},
 	}
 	// cli.HelpPrinter = func(w io.Writer, templ string, data interface{}) {
 	// 	fmt.Println("TODO: better main help")
